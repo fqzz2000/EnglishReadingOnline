@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reading1.css" />
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>【学好英语，报效祖国】</title>
+</head>
+<style>
+    ul {
+        margin: 0 auto;
+    }
+    
+    .tpo>div:first-child {
+        font-size: 28px;
+    }
+    
+    .tpo>div {
+        display: table-cell;
+        padding: 15px 20px;
+    }
+    
+    .tpo {
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: rgba(230, 230, 230, 0.5);
+        margin: 5px;
+    }
+    
+    span {
+        display: block;
+    }
+    
+    a {
+        background-color: green;
+        display: block;
+        color: rgba(255, 255, 255, 1);
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+    
+    .incomplete a {
+        background-color: gray;
+        cursor: default;
+    }
+    
+    .incomplete a:hover {
+        color: #ffffff;
+    }
+    
+    a.all {
+        background-color: orange;
+    }
+    
+    a:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    li {
+        text-align: center;
+    }
+</style>
+
+
+<body>
+    <nav>
+        <span>为中华之崛起而写阅读</span>
+    </nav>
+    <div id="main">
+        <ul>
+            <li>
+                <div class="tpo">
+                    <div><span>TPO 56</span></div>
+                    <div><a href="PracticeSystem.html?tpo=56&passage=0&full=false">passage 1</a></div>
+                    <div class='incomplete'><a href="javascript:void(0)">passage 2</a></div>
+                    <div><a href="PracticeSystem.html?tpo=56&passage=1&full=false">passage 3</a></div>
+                    <div><a href="PracticeSystem.html?tpo=56&passage=0&full=true" class='all'>练习整套</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="tpo">
+                    <div><span>TPO 58</span></div>
+                    <div><a href="PracticeSystem.html?tpo=58&passage=0&full=false">passage 1</a></div>
+                    <div><a href="PracticeSystem.html?tpo=58&passage=1&full=false">passage 2</a></div>
+                    <div class='incomplete'><a href="javascript:void(0)">passage 3</a></div>
+                    <div><a href="PracticeSystem.html?tpo=58&passage=0&full=true" class='all'>练习整套</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="tpo">
+                    <div><span>TPO 59</span></div>
+                    <div><a href="PracticeSystem.html?tpo=59&passage=0&full=false">passage 1</a> </div>
+                    <div><a href="PracticeSystem.html?tpo=59&passage=1&full=false">passage 2</a></div>
+                    <div><a href="PracticeSystem.html?tpo=59&passage=2&full=false">passage 3</a></div>
+                    <div><a href="PracticeSystem.html?tpo=59&passage=0&full=true" class='all'>练习整套</a></div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    {
+        $('.incomplete a').attr('title', '开发中')
+    }
+</script>
+
+</html>
