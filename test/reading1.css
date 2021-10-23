@@ -54,12 +54,12 @@ nav {
 
 nav>a {
     float: right;
-    background-color: blue;
+    background-color: #62f183;
     padding: 0 40px;
 }
 
 nav>a:hover {
-    background-color: black;
+    background-color: #62f183;
 }
 
 p {
