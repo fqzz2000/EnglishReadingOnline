@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li>input:hover,
+li>label:hover {
+    cursor: pointer;
+}
+
+#time-count,
+#question-count {
+    margin: 0 20px;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*去除未被访问的a标签的下划线*/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* 主要样式 */
+
+#main {
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    border: 1px solid #cbcbcb;
+    margin: auto;
+}
+
+#left,
+#right {
+    position: relative;
+    display: table-cell;
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 50px;
+    background-color: blue;
+    line-height: 50px;
+    color: white;
+    padding: 0 150px;
+}
+
+nav>a {
+    float: right;
+    background-color: blue;
+    padding: 0 40px;
+}
+
+nav>a:hover {
+    background-color: black;
+}
+
+p {
+    display: block;
+    margin: 20px 15px 20px 15px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#title {
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#passage {
+    width: 600px;
+    height: 700px;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}
+
+#options {
+    margin-left: 50px;
+}
+
+#options>li {
+    padding: 20px;
+}
+
+#content strong {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* 六选三样式 */
+
+#structure {
+    display: none;
+    height: 100%;
+    width: 1100px;
+    box-sizing: border-box;
+}
+
+#structure {
+    margin: 0 auto;
+    height: 100%;
+    overflow: auto;
+}
+
+#structure>div {
+    margin: 30px 0;
+}
+
+#directions tr:first-child div {
+    text-align: left;
+    margin: 20px 0;
+}
+
+#directions tr:last-child div {
+    background-color: #cbcbcb;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#structure #question-field {
+    border: 1px black solid;
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#question-field div {
+    min-height: 50px;
+    margin: 20px;
+}
+
+#question-field li:nth-child(n+2) div {
+    cursor: pointer;
+}
+
+#question-field li:nth-child(n+2) div::before {
+    content: '▶';
+}
+
+#answer-choices {
+    text-align: center;
+}
+
+#answer-choices div {
+    text-align: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* 打分页面 */
+
+#rater {
+    display: none;
+    height: 100%;
+    width: 1200px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#rater table td div {
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+}
+
+#rater table th div {
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+}
+
+#rater table {
+    border: 1px solid #cbcbcb;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: larger;
+}
+
+#rater td,
+#rater th {
+    margin: 0;
+    border: 1px solid #cbcbcb;
+}
+
+#rater table tbody>tr:nth-child(2n+1)>td {
+    cursor: pointer;
+}
